@@ -5,6 +5,8 @@ public class SnakeLadder {
 	public static void main(String[] args) {
 		System.out.println("welcome to Snake And ladder Program");	
 		int playerPos = 0;
+		
+		while (playerPos<100) {
 		byte dice = (byte)(Math.random()*6 + 1 );
 		System.out.println("Dice Show: " + dice);
 		byte playerOptions = (byte)(Math.random()*3 );
@@ -25,8 +27,6 @@ public class SnakeLadder {
 			playerPos = playerPos - dice;
 			if (playerPos <= 0) {
 				playerPos = 0;}
-			break;	
-		}
-		System.out.println("Player is at position : " + playerPos);
-	}
+			break;}
+		System.out.println("Player is at position : " + playerPos); } }
 }
